@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ['...', 'gradle']
-
-[phases.build]
-cmds = ['./gradlew clean build -x test']
-
-[start]
-cmd = 'java -Dserver.port=${PORT:-8080} -jar build/libs/*.jar'
